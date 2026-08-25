@@ -1,0 +1,185 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #605c5c;
+  margin: 0;
+  font-family: Tahoma, sans-serif;
+}
+
+section {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 75%;
+  margin-left: 5px;
+  position: relative;
+}
+
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-family: inherit;
+  text-align: right;
+}
+
+input:focus {
+  border-color: #555;
+}
+
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+
+p {
+  color: red;
+  font-size: 13px;
+  margin: 0;
+  text-align: right;
+}
+
+
+
+#togglePassword,
+#toggleConfirmPassword {
+    transform: translateY(-45px);
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width :1280px) { 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #605c5c;
+  margin: 0;
+  font-family: Tahoma, sans-serif;
+}
+
+section {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+  position: relative;
+}
+
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-family: inherit;
+}
+
+input:focus {
+  border-color: #555;
+}
+
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+
+p {
+  color: red;
+  font-size: 13px;
+  margin: 0;
+  text-align: right;
+}
+
+
+
+#togglePassword,
+#toggleConfirmPassword {
+    transform: translateY(-45px);
+    margin-left: 10px;
+}
+
+
+
+
+}
+
+
+
+
+

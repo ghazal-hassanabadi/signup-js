@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -12,6 +13,23 @@
     <section>
       <input type="email" id="email" placeholder="ایمیل">
       <p id="emailError"></p>
+
+
+      <input type="password" id="password" placeholder="رمز عبور">
+      <span id="togglePassword">
+           <i class="fa-regular fa-eye"></i>
+      </span>
+      <p id="passwordError"></p>
+
+      <input type="password" id="confirmPassword" placeholder="تکرار رمز عبور">
+      
+      <span id="toggleConfirmPassword">
+          <i class="fa-regular fa-eye"></i>
+      </span>
+      <p id="confirmPasswordError"></p>
+
+
+      <button type="submit">ثبت‌نام</button>
     
     </section>
   </form>
