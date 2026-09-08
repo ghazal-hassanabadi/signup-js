@@ -18,10 +18,22 @@ const passwordIcon = togglePassword.querySelector("i");
 const confirmPasswordIcon = toggleConfirmPassword.querySelector("i");
 
 
+function isEmailValid() {
+  return emailInput.checkValidity();
+}
+
+function isPasswordValid() {
+  return passwordInput.value.length >= 6;
+}
+
+function doPasswordsMatch() {
+  return confirmPasswordInput.value === passwordInput.value;
+}
+
 emailInput.addEventListener("input",
      function() {
 
-        if (emailInput.checkValidity())
+        if (isEmailValid())
              {
            emailError.textContent = "";
              }
@@ -43,7 +55,7 @@ emailInput.addEventListener("input",
 passwordInput.addEventListener("input", 
     function() {
 
-      if (passwordInput.value.length >= 6) 
+      if (isPasswordValid())
         {
          passwordError.textContent = "";
         }
@@ -59,7 +71,7 @@ passwordInput.addEventListener("input",
 confirmPasswordInput.addEventListener("input", 
     function() {
 
-      if (confirmPasswordInput.value === passwordInput.value)
+      if (doPasswordsMatch())
         {
           confirmPasswordError.textContent = "";
         } 
@@ -76,13 +88,7 @@ form.addEventListener("submit",
     function(event) {
        event.preventDefault();
 
-       if (
-
-             emailInput.checkValidity() &&
-             passwordInput.value.length >= 6 &&
-             confirmPasswordInput.value === passwordInput.value
-
-  )
+       if (isEmailValid() && isPasswordValid() && doPasswordsMatch())
 
           {
             console.log("ثبت‌نام موفق بود!");
