@@ -17,6 +17,8 @@ const toggleConfirmPassword = document.getElementById("toggleConfirmPassword");
 const passwordIcon = togglePassword.querySelector("i");
 const confirmPasswordIcon = toggleConfirmPassword.querySelector("i");
 
+const successMessage = document.getElementById("successMessage");
+
 
 function isEmailValid() {
   return emailInput.checkValidity();
@@ -91,7 +93,7 @@ form.addEventListener("submit",
        if (isEmailValid() && isPasswordValid() && doPasswordsMatch())
 
           {
-            console.log("ثبت‌نام موفق بود!");
+            successMessage.textContent = "ثبت‌نام موفق بود!";
           
         }
          else {
