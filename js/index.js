@@ -11,6 +11,9 @@ const form = document.getElementById("signupForm");
 
 
 
+const togglePassword = document.getElementById("togglePassword");
+const toggleConfirmPassword = document.getElementById("toggleConfirmPassword");
+
 const passwordIcon = togglePassword.querySelector("i");
 const confirmPasswordIcon = toggleConfirmPassword.querySelector("i");
 
@@ -94,7 +97,11 @@ form.addEventListener("submit",
 );
 
 
+function validateEmail(email) {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
+    return emailPattern.test(email);
+}
 
 
 
