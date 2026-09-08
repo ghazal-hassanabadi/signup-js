@@ -93,7 +93,7 @@ form.addEventListener("submit",
        if (isEmailValid() && isPasswordValid() && doPasswordsMatch())
 
           {
-            successMessage.textContent = "ثبت‌نام موفق بود!";
+            successMessage.textContent = "ثبت نام موفق بود";
           
         }
          else {
