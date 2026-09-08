@@ -21,7 +21,7 @@ const confirmPasswordIcon = toggleConfirmPassword.querySelector("i");
 emailInput.addEventListener("input",
      function() {
 
-        if (emailInput.value.includes("@") && emailInput.value.includes(".com"))
+        if (emailInput.checkValidity())
              {
            emailError.textContent = "";
              }
@@ -78,12 +78,11 @@ form.addEventListener("submit",
 
        if (
 
-         emailInput.value.includes("@") &&
-         emailInput.value.includes(".com") &&
-         passwordInput.value.length >= 6 &&
-         confirmPasswordInput.value === passwordInput.value
+             emailInput.checkValidity() &&
+             passwordInput.value.length >= 6 &&
+             confirmPasswordInput.value === passwordInput.value
 
-          ) 
+  )
 
           {
             console.log("ثبت‌نام موفق بود!");
@@ -97,11 +96,7 @@ form.addEventListener("submit",
 );
 
 
-function validateEmail(email) {
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
-    return emailPattern.test(email);
-}
 
 
 
