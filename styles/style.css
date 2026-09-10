@@ -63,11 +63,18 @@ p {
 
 
 
-#togglePassword,
-#toggleConfirmPassword {
-    transform: translateY(-45px);
+#togglePassword {
+  
     margin-left: 5px;
     font-size: 12px;
+    transform: translateY(-45px);
+}
+
+#toggleConfirmPassword {
+    margin-left: 10px;
+    font-size: 12px;
+    transform: translateY(-75px);
+    
 }
 
 #successMessage {
@@ -80,23 +87,32 @@ p {
 
 
 
+#passwordError {
+  transform: translateY(-30px);
+}
+
+#confirmPassword {
+  transform: translateY(-28px);
+}
+
+#confirmPasswordError {
+  transform: translateY(-55px);
+}
 
 
 
 
+#successMessage {
+  color: rgb(3, 157, 3);
+  font-size: 12px;
+  
+  text-align: center;
+  margin-top: 20px;
+}
 
 
 
 @media (min-width :1280px) { 
-
-
-
-
-
-
-
-
-
 
 
 
@@ -178,8 +194,7 @@ p {
 
 
 
-#togglePassword,
-#toggleConfirmPassword {
+#togglePassword{
     transform: translateY(-45px);
     margin-left: 10px;
 }
@@ -189,13 +204,7 @@ p {
 
 }
 
-#successMessage {
-  color: rgb(3, 157, 3);
-  font-size: 12px;
-  
-  text-align: center;
-  margin-top: 20px;
-}
+
 
 
 
